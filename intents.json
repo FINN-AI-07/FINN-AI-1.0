@@ -1,0 +1,125 @@
+{
+    "intents":[
+        {
+            "tag":"greeting",
+            "patterns":[
+                "Hi",
+                "Hey",
+                "Hai",
+                "How are you",
+                "Is anyone there",
+                "Hello",
+                "Good day"
+            ],
+
+            "responses":[
+                "Hey:-)",
+                "Hello,Thanks for visiting",
+                "Hi there,what can I do for you?",
+                "Hi there,how can I help"
+            ]
+        },
+
+        {
+            "tag":"goodbye",
+            "patterns":["Bye","See you later","Goodbye"],
+            "responses":[
+                "See you later,thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+
+            ]
+        },
+        {
+            "tag":"thanks",
+            "patterns":["Thanks","Thank you"],
+            "responses":["Happy to help!","Any time!"]
+        },
+
+        {
+            "tag":"items",
+            "patterns":[
+              "Which items do you have?",
+              "What kinds of items are there?",
+              "What do you sell?"
+                
+            ],
+            "responses":[
+                "We sell Coffee and Tea",
+                "We have coffee and Tea"
+            ]
+
+        },
+
+        {
+            "tag":"chair",
+            "patterns":[
+               "who is the current chair of IEEE FISAT SB",
+               "Who is the current chairperson of the IEEE FISAT Student Branch?",
+               "Can you tell me who holds the position of chair at the IEEE FISAT SB?",
+               "Do you know who the chair of the IEEE FISAT SB is right now?",
+               "Who is leading the IEEE FISAT Student Branch as chair?",
+               "Who is the present chair of the IEEE FISAT SB?"
+            ],
+
+            "responses":[
+             "The current chairperson of the IEEE FISAT Student Branch is Bhavana R Nair.",
+             "The chair of the IEEE FISAT SB right now is Bhavana R Nair.",
+             "Bhavana R Nair is the present chair of the IEEE FISAT SB.",
+             "Bhavana R Nair holds the position of chair at the IEEE FISAT SB.",
+             "Leading the IEEE FISAT Student Branch as chair is Bhavana R Nair."
+            ]
+        },
+
+
+        {
+            "tag":"counsellor",
+            "patterns":[
+               "who is the current Branch counsellor of IEEE FISAT SB",
+               "Who is the current Branch counsellor of the IEEE FISAT Student Branch?",
+               "Can you tell me who holds the position of Branch counsellor at the IEEE FISAT SB?",
+               "Do you know who the Branch counsellor of the IEEE FISAT SB is right now?",
+               "Who is leading the IEEE FISAT Student Branch as Branch counsellor?",
+               "Who is the present Branch counsellor of the IEEE FISAT SB?"
+            ],
+
+            "responses":[
+             "The current Branch counsellor of the IEEE FISAT Student Branch is Basil K Jeemon.",
+             "The Branch counsellor of the IEEE FISAT SB right now is Basil K Jeemon.",
+             "Basil K Jeemon is the present Branch counsellor of the IEEE FISAT SB.",
+             "Basil K Jeemon holds the position of Branch counsellor at the IEEE FISAT SB.",
+             "Leading the IEEE FISAT Student Branch as Branch counsellor is Basil K Jeemon."
+            ]
+        },
+
+        {
+            "tag":"ieee",
+            "patterns":[
+              "When was ieee FISAT SB created?",
+              "Which year did IEEE FISAT SB get created?",
+              "Tell me about IEEE FISAT SB"
+                
+            ],
+            "responses":[
+                "2003",
+                "It was 21 years back,in the year 2003"
+            ]
+
+        },
+        {
+            "tag":"birthday",
+            "patterns":[
+              "Happy Birthday Babu",
+              "Happiest birthday to you",
+              "bday wishes to you babu"
+                
+            ],
+            "responses":[
+                "Thank you for wishing me,Oreo",
+                "looking foward to cut my 21st birthday cake today"
+            ]
+
+        }
+
+    ]
+}
