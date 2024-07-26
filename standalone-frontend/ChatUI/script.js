@@ -14,7 +14,7 @@ function addMessage(content,isUser=false){
         `;
     }else{
         messageDiv.innerHTML=`
-        <img src="./gregggg.jpg">
+        <img src="./Finn.png">
 
         <p>${content}</p>
 
@@ -45,7 +45,7 @@ function addLoader(){
     const loaderDiv = document.createElement('div');
     loaderDiv.className='reply-text';
     loaderDiv.innerHTML = `
-                <img src="./gregggg.jpg">
+                <img src="./Finn.png">
                 <div class="loader">
                     <div class="circle">
                         <div class="dot"></div>
