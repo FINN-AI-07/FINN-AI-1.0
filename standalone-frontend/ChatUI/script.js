@@ -125,7 +125,6 @@ sendBtn.addEventListener('click',async () =>{
             addMessage("Sorry, I couldn't generate a reply.");
         }
     }
-
    
 
 })
