@@ -1,7 +1,7 @@
 const chatContainer= document.getElementById('chat-body');
 const userInput= document.getElementById('user-input');
 const sendBtn = document.getElementById('send');
-
+chatContainer.scrollTop = chatContainer.scrollHeight;
 function addMessage(content,isUser=false){
     const messageDiv = document.createElement('div');
     messageDiv.className = isUser? 'input-text' :'reply-text';

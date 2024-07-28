@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   font-weight: 400;
   background: #121212;
   color: #fff;
@@ -376,12 +384,30 @@ button:hover{
   transition: all 2s;
 }
 
+.scrollable {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;  
+}
+
+.scrollable::-webkit-scrollbar { 
+  width: 0;
+  height: 0;
+  display: none; 
+}
+
+.scrollable {
+  -webkit-overflow-scrolling: touch;
+}
+
 .border {
   max-height: 59px;
   max-width: 303px;
   border-radius: 11px;
   filter: blur(0.5px);
 }
+
+
 
 .border::before {
   content: "";
