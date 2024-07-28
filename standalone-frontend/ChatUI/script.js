@@ -1,9 +1,8 @@
 const chatContainer= document.getElementById('chat-body');
 const userInput= document.getElementById('user-input');
 const sendBtn = document.getElementById('send');
-
+chatContainer.scrollTop = chatContainer.scrollHeight;
 function addMessage(content,isUser=false){
-    console.log(isUser);
     const messageDiv = document.createElement('div');
     messageDiv.className = isUser? 'input-text' :'reply-text';
 
@@ -14,7 +13,7 @@ function addMessage(content,isUser=false){
         `;
     }else{
         messageDiv.innerHTML=`
-        <img src="./gregggg.jpg">
+        <img src="./Finn.png">
 
         <p>${content}</p>
 
@@ -45,7 +44,7 @@ function addLoader(){
     const loaderDiv = document.createElement('div');
     loaderDiv.className='reply-text';
     loaderDiv.innerHTML = `
-                <img src="./gregggg.jpg">
+                <img src="./Finn.png">
                 <div class="loader">
                     <div class="circle">
                         <div class="dot"></div>
@@ -125,7 +124,6 @@ sendBtn.addEventListener('click',async () =>{
             addMessage("Sorry, I couldn't generate a reply.");
         }
     }
-
    
 
 })
@@ -135,4 +133,33 @@ userInput.addEventListener('keypress',(e)=>{
     if(e.key==='Enter'){
         sendBtn.click();
     }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const gsap = window.gsap;
+
+    gsap.set(".input-container", { autoAlpha: 0, y: 50 });
+
+    const typeText = () => {
+        return new Promise((resolve) => {
+            const text = "Chat with Finn-AI";
+            const textElement = document.querySelector(".landing p");
+            let index = 0;
+
+            const typeInterval = setInterval(() => {
+                textElement.textContent = text.slice(0, index + 1);
+                index += 1;
+                if (index === text.length) {
+                    clearInterval(typeInterval);
+                    resolve();
+                }
+            }, 50); 
+        });
+    };
+
+    typeText().then(() => {
+        gsap.to(".input-container", { autoAlpha: 1, y: 0, duration: 1, ease: "power2.out" });
+    });
 });
